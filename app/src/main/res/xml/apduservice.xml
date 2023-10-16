@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/service_desc"
+    android:requireDeviceUnlock="false">
+
+    <aid-group android:description="@string/aid_description"
+        android:category="other">
+        <aid-filter android:name="@string/aid_1"/>
+        <aid-filter android:name="@string/aid_2"/>
+    </aid-group>
+</host-apdu-service>
+
+    <!-->
+    <host-apdu-service> 태그는 UI에 표시될 수 있는 사용자 친화적인 서비스 설명이 있는 <android:description> 속성을 포함해야 합니다.
+    requireDeviceUnlock 속성을 사용하면 APDU를 처리하기 위해 이 서비스를 호출하기 전에 먼저 기기를 잠금 해제하도록 지정할 수 있습니다.
+    <host-apdu-service>는 <aid-group> 태그를 하나 이상 포함해야 합니다. 각 <aid-group> 태그는 다음 작업을 하는 데 필요합니다.
+
+    UI에 표시하기에 적합한 사용자 친화적인 AID 그룹 설명이 있는 android:description 속성을 포함합니다.
+    AID 그룹이 속한 카테고리(예: CATEGORY_PAYMENT 또는 CATEGORY_OTHER에 의해 정의된 문자열 상수)를 나타내도록 android:category 속성을 설정합니다.
+    각 <aid-group>에는 <aid-filter> 태그가 하나 이상 포함되어야 하며 각 태그에는 단일 AID가 포함됩니다. AID는 16진수 형식으로 지정해야 하며 짝수의 문자를 포함해야 합니다.
+    마지막으로 애플리케이션은 HCE 서비스로 등록할 수 있도록 NFC 권한도 보유해야 합니다.
+        </-->

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NFCTest</string>
+    <string name="service_desc">Apdu Service Description</string>
+    <string name="aid_description">AID Description</string>
+    <string name="aid_1">F0010203040506</string>
+    <string name="aid_2">F0394148148100</string>
+
+
 </resources>
